@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/navbar"
-import UserComponent from "./components/userComponent";
-import AddUser from "./components/addUser";
+import UserComponent from "./components/UserComponent";
+import AddUserComponent from "./components/AddUserComponent";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/list" element={<UserComponent />} />
 
           {/* Add page */}
-          <Route path="/add" element={<AddUser />} />
+          <Route path="/add" element={<AddUserComponent />} />
           <Route path="*" element={<p>Page not found</p>} />
         </Routes>
       </div>

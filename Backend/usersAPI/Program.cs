@@ -1,14 +1,16 @@
-using usersAPI.Model;
 using Microsoft.EntityFrameworkCore;
+using usersAPI.Model; 
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-string dbPath = "/app/data/mydatabase.db";
-string connectionString = $"Data Source={dbPath}";
+var dbPath = Environment.GetEnvironmentVariable("SQLITE_DB_PATH") ?? "/app/data/mydatabase.db";
+var dbFolder = Path.GetDirectoryName(dbPath) ?? "/app/data";
+Directory.CreateDirectory(dbFolder);
 
+var connectionString = $"Data Source={dbPath}";
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(connectionString));
 

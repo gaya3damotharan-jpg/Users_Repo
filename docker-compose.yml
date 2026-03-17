@@ -5,15 +5,16 @@ services:
   api:
     build: ./Backend/usersAPI
     container_name: users-api
+    user: "0:0"
     ports:
       - "5000:8080"
-    volumes: 
+    volumes:
       - db_volume:/app/data
     environment:
       - ASPNETCORE_URLS=http://+:8080
+      - SQLITE_DB_PATH=/app/data/mydatabase.db
     command: >
-      sh -c "dotnet ef database update &&
-        dotnet run"
+      sh -c "mkdir -p /app/data && chown -R app:app /app/data && dotnet ef database update && dotnet run"
 
   frontend:
     build: ./Frontend/my-app

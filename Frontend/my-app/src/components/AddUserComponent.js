@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { addUser } from "../service";
 import { useNavigate } from "react-router-dom";
+import "./user.css";
 
-export default function AddUser() {
+export default function AddUserComponent() {
   const [form, setForm] = useState({ name:"", age:"", city:"", state:"", pin:"" });
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();

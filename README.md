@@ -65,10 +65,12 @@ cd usersRepo
 
 ## 🚀 Setup & Run
 
+Run Docker-compose up --build
+
 Frontend (React UI) → http://localhost:3000
 
+# Swagger only for Development phase
 Backend API (Swagger) → http://localhost:5000/swagger
-
 Backend API (Base) → http://localhost:5000/api/users
 
 ---
