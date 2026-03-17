@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+
+  api:
+    build: ./Backend/usersAPI
+    container_name: users-api
+    ports:
+      - "5000:8080"
+    volumes: 
+      - db_volume:/app/data
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+    command: >
+      sh -c "dotnet ef database update &&
+        dotnet run"
+
+  frontend:
+    build: ./Frontend/my-app
+    container_name: user-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+
+  db:
+    image: nouchka/sqlite3   # lightweight SQLite image for managing the file
+    container_name: sqlite
+    volumes:
+      - db_volume:/data
+    command: tail -f /dev/null  # keep container running
+
+volumes:
+  db_volume:
+    driver: local

@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|c:\\users\\gaya3\\downloads\\users_repo-main\\users_repo-main\\backend\\usersapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|c:\\users\\gaya3\\downloads\\users_repo-main\\users_repo-main\\backend\\usersapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|c:\\users\\gaya3\\downloads\\users_repo-main\\users_repo-main\\backend\\usersapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|c:\\users\\gaya3\\downloads\\users_repo-main\\users_repo-main\\backend\\usersapi\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|c:\\users\\gaya3\\downloads\\users_repo-main\\users_repo-main\\backend\\usersapi\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|solutionrelative:model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|c:\\users\\gaya3\\downloads\\users_repo-main\\users_repo-main\\backend\\usersapi\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|solutionrelative:userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|c:\\users\\gaya3\\downloads\\users_repo-main\\users_repo-main\\backend\\usersapi\\usersapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7BDB1077-1B7D-4A0D-A72C-51FC477824B5}|usersAPI.csproj|solutionrelative:usersapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-17T04:57:04.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-13T09:27:03.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "usersAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\usersAPI.csproj",
+              "RelativeDocumentMoniker": "usersAPI.csproj",
+              "ToolTip": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\usersAPI.csproj",
+              "RelativeToolTip": "usersAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-13T09:10:47.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:01:58.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\UsersController.cs",
+              "RelativeDocumentMoniker": "UsersController.cs",
+              "ToolTip": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\UsersController.cs",
+              "RelativeToolTip": "UsersController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAgwC8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:00:49.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\Model\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Model\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\Model\\AppDbContext.cs",
+              "RelativeToolTip": "Model\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T08:59:19.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "C:\\Users\\gaya3\\Downloads\\Users_Repo-main\\Users_Repo-main\\Backend\\usersAPI\\Model\\User.cs",
+              "RelativeToolTip": "Model\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T08:59:02.085Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
