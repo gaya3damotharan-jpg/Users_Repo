@@ -42,12 +42,12 @@ A full‑stack application built with **React** (frontend) and **ASP.NET Core We
    - Validation rules enforced in controllers/models.  
    - Swagger UI enabled for API documentation.
 
-3. **Testing**  
+3. **Testing**  Yet to cover 
    - Unit tests with xUnit and EF Core InMemory.  
    - Controller tests with Moq.  
    - Integration tests using `WebApplicationFactory<Program>`.
 
-4. **Deployment**  
+4. **Deployment**  Yet to cover
    - Multi‑stage Docker builds (SDK → runtime).  
    - Docker Compose orchestrates frontend + backend.  
    - Environment variables managed via `.env`.
