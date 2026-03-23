@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using usersAPI.Model;
+using usersAPI.Services;
 
 namespace usersAPI
 {
@@ -9,23 +10,23 @@ namespace usersAPI
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly IUserService _userService;
 
-        public UsersController(AppDbContext context)
+        public UsersController(IUserService userService)
         {
-            _context = context;
+            _userService = userService;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> Get()
         {
-            return await _context.Users.ToListAsync();
+            return Ok(await _userService.GetAllUsersAsync());
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> Get(int id)
         {
-            var user = await _context.Users.FindAsync(id);
+            var user = await _userService.GetUserByIdAsync(id);
 
             if (user == null)
                 return NotFound();
@@ -39,21 +40,18 @@ namespace usersAPI
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
+            var createdUser = await _userService.CreateUserAsync(user);
 
-            return CreatedAtAction(nameof(Get), new { id = user.Id }, user);
+            return CreatedAtAction(nameof(Get), new { id = createdUser.Id }, createdUser);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, User user)
         {
-            if (id != user.Id)
+            var success = await _userService.UpdateUserAsync(id, user);
+
+            if (!success)
                 return BadRequest();
-
-            _context.Entry(user).State = EntityState.Modified;
-
-            await _context.SaveChangesAsync();
 
             return NoContent();
         }
@@ -61,13 +59,10 @@ namespace usersAPI
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var user = await _context.Users.FindAsync(id);
+            var success = await _userService.DeleteUserAsync(id);
 
-            if (user == null)
+            if (!success)
                 return NotFound();
-
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
 
             return NoContent();
         }

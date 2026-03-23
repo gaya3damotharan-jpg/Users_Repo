@@ -8,7 +8,6 @@ namespace usersAPI.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
         public int Id { get; set; }
 
         [Required, StringLength(100, MinimumLength = 2)]
@@ -25,5 +24,14 @@ namespace usersAPI.Model
 
         [Required, StringLength(10, MinimumLength = 4)]
         public string Pin { get; set; }
+
+        // Constructor to satisfy nullable reference types
+        public User()
+        {
+            Name = string.Empty;
+            City = string.Empty;
+            State = string.Empty;
+            Pin = string.Empty;
+        }
     }
 }

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using usersAPI.Model; 
+using usersAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,8 @@ Directory.CreateDirectory(dbFolder);
 var connectionString = $"Data Source={dbPath}";
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(connectionString));
+
+builder.Services.AddScoped<IUserService, UserService>();
 
 // Add CORS policy
 builder.Services.AddCors(options =>
